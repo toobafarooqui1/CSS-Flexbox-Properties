@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Proprties.</title>
+
+    <style>
+    #container{
+     border: 3px solid #000;
+     width: 200px;
+     height: 200px;
+     color: #fff;
+     font-weight: bold;
+     display: grid;
+     
+    }
+
+    #div_01{
+     background: #2e424d;
+     width: 105px;
+    }
+
+    #div_02{
+     background: #5b8291;
+     width: 188px;
+    }
+
+    #div_03{
+     background: #98dad9;
+     width: 76px;
+    }   
+
+    #div_04{
+     background: #eaebed;
+     width: 161px;
+    } 
+    
+   </style>
+
+   <style>
+    #container2{
+     border: 3px solid #000;
+     width: 200px;
+     height: 200px;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+     flex-wrap: wrap-reverse;
+    }
+
+    #div_05{
+     background: #0295a9;
+     height: 148px;
+    }
+
+    #div_06{
+     background: #12adc1;
+     width: 28px;
+     height: 80px;
+     text-align: center;
+    }
+
+    #div_07{
+     background: #fdd037;
+     height: 185px;
+    }   
+
+    #div_08{
+     background: #ebe4e4;
+     height: 105px;
+    } 
+    </style> 
+
+    <style>
+    #container3{
+     border: 3px solid #000;
+     width: 200px;
+     height: 200px;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+     flex-direction: column;
+    }
+
+    #div_09{
+     background: #5d781b;
+     height: 30px;
+     width: 140px;
+     text-align: center;
+    }
+
+    #div_1{
+     background: #b3a938;
+     height: 30px;
+     width: 65px;
+     text-align: center;
+    }
+
+    #div_2{
+     background: #fbca6b;
+     height: 30px;
+     width: 170px;
+     text-align: center;
+    }   
+
+    #div_3{
+     background: #eaebed;
+     height: 30px;
+     width: 85px;
+     text-align: center;
+    } 
+   </style>
+
+<style>
+    #container4{
+     border: 3px solid #000;
+     width: 200px;
+     height: 200px;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+    flex-flow: row-reverse;
+    }
+
+    #div_4{
+     background: #41436a;
+     height: 65px;
+    }
+
+    #div_5{
+     background: #97409763;
+     height: 195px;
+    }
+
+    #div_6{
+     background: #f54768;
+     width: 28px;
+     height: 120px;
+     text-align: center;
+    }   
+
+    #div_7{
+     background: #ff9677;
+     height: 150px;
+    } 
+    </style> 
+
+    <style>
+    #container5{
+     border: 3px solid #000;
+     width: 200px;
+     height: 200px;
+     color: #fff;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+    }
+
+    #div_8{
+     background: #fa4753;
+     height: 22px;
+     width: 40px;
+    }
+
+    #div_9{
+     background: #dfc3c3  ;
+     height: 40px;
+     width: 55px;
+     text-align: center;
+    }
+
+    #div_10{
+     background: #17181c;
+     height: 20px;
+     width: 32px;
+    }   
+
+    #div_20{
+     background: #9ba5c9;
+     height: 50px;
+     width: 55px;
+     text-align: center;
+    } 
+    </style> 
+      <style>
+        #container6{
+         border: 3px solid #000;
+         width: 200px;
+         height: 200px;
+         color: #fff;
+         font-weight: bold;
+         display: flex;
+         column-gap: 15px;
+        }
+    
+        #div_30{
+         background: #6e5dcf;
+         height: 150px;
+        }
+
+        #div_40{
+         background: #eaebed;
+         height: 120px;
+        }
+    
+        #div_50{
+         background: #243b67;
+         height: 195px;
+        }
+    
+        #div_60{
+         background: #c27dfc;
+         width: 28px;
+         height: 72px;
+         text-align: center;
+        } 
+        </style>
+</head>
+
+<body>
+ 
+    <h1 style="color: #6bbd99; text-align: center;"><u>CSS Flexbox Properties!</u></h1>
+    
+    <br><br>
+    <h3 style="color: #0e0d0de7; text-align: center;">Display</h3>
+     <div id="container">
+      <div class="item child" id="div_01">One</div>
+      <div class="item child" id="div_02">Two</div>
+      <div class="item child" id="div_03">Three</div>
+      <div class="item child" id="div_04">Four</div>
+     </div>
+    <br>
+    <h3 style="color: #0e0d0de7; text-align: center;">Flex-Wrap</h3>
+     <div id="container2">
+        <div class="item child" id="div_05">Five</div>
+        <div class="item child" id="div_06">Six</div>
+        <div class="item child" id="div_07">Seven</div>
+        <div class="item child" id="div_08">Eight</div>
+     </div> 
+     <br>
+     <h3 style="color: #0e0d0de7; text-align: center;">Flex-Direction</h3>
+     <div id="container3">
+        <div class="item child" id="div_09">Nine</div>
+        <div class="item child" id="div_1">One</div>
+        <div class="item child" id="div_2">Two</div>
+        <div class="item child" id="div_3">Three</div>
+     </div> 
+     <br>
+     <h3 style="color: #0e0d0de7; text-align: center;">Flex-Flow</h3>
+     <div id="container4">
+        <div class="item child" id="div_4">Four</div>
+        <div class="item child" id="div_5">Five</div>
+        <div class="item child" id="div_6">Six</div>
+        <div class="item child" id="div_7">Seven</div>
+     </div> 
+     <br>
+     <h3 style="color: #0e0d0de7; text-align: center;">Align-Items</h3>
+     <div id="container5">
+        <div class="item child" id="div_8">Eight</div>
+        <div class="item child" id="div_9">Nine</div>
+        <div class="item child" id="div_10">One</div>
+        <div class="item child" id="div_20">Two</div>
+     </div> 
+     <br>
+     <h3 style="color: #0e0d0de7; text-align: center;">Gaps</h3>
+     <div id="container6">
+        <div class="item child" id="div_30">Three</div>
+        <div class="item child" id="div_40">Four</div>
+        <div class="item child" id="div_50">Five</div>
+        <div class="item child" id="div_60">Six</div>
+     </div> 
+    
+</body>
+
+</html>
